@@ -1,0 +1,578 @@
+/* Font Files */
+@font-face {
+  font-family: F_Bold;
+  src: local("F_Bold"), url("BOLD.TTF");
+}
+
+/* main css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body,
+html {
+  font-family: F_Bold, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+/* error form style */
+
+#error {
+  position: relative;
+  top: -5px;
+  color: red;
+  font-size: 14px;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0 5px 3px;
+  background: #fcfefe;
+  border-radius: 3px;
+  border: 1px solid red;
+  line-height: 1.2;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+#error.active {
+  opacity: 1;
+}
+
+/* button */
+
+.btn_img {
+  width: 40%;
+  margin: 0 auto;
+  padding: 8px 0 0px;
+}
+
+.div_btn {
+  text-align: center;
+}
+.div_btn .btn {
+  font-family: F_Bold, sans-serif;
+  font-size: 28px;
+  padding: 1px 38px 5px;
+  line-height: 1.7;
+  color: #fff;
+  background: linear-gradient(#2EAD14, #135806);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #2727276b;
+  cursor: pointer;
+}
+
+.div_btn .btn span {
+  color: #e2e2e2;
+}
+@media (min-width: 576px) {
+  .btn_img {
+    width: 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn_img {
+    width: 220px;
+  }
+}
+
+/* ================== */
+/* Start hero Section */
+.hero{
+  background-color: #007903;
+}
+.hero .content {
+  background: url(../images/bg-hero.webp);
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 8px;
+  text-align: center;
+  padding-bottom: 12px;
+}
+.hero ul li {
+  font-size: 4.9vw;
+  line-height: 1.4;
+  padding: 4px 1px 8px;
+  margin: 0 auto 12px;
+  box-shadow: 0 5px 15px #58585820;
+  border-radius:15px;
+  width: 96%;
+  overflow: hidden;
+}
+.hero ul li.white {
+  color: #1C1C1C;
+  background: linear-gradient(#F9F9F9,#DDDDDD);
+}
+.hero ul li.black {
+  color: #2EB212;
+  padding: 4px 1px 8px;
+  background: linear-gradient(#353535,#161416);
+}
+.hero ul li.black span{
+  color: #42F01C;
+}
+.hero ul li.last {
+  margin-bottom: 0;
+}
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width: 576px) {
+  .hero ul li {
+    border-radius: 20px;
+    margin: 0 auto 10px;
+    width: 76%;
+    font-size: 4vw;
+    padding: 4px 1px 14px;
+  }
+
+  .hero ul li.orange,
+  .hero ul li.black {
+    border-radius: 20px;
+    margin: 0 auto 10px;
+    box-shadow: 0 5px 15px #5858584b;
+  }
+}
+
+/* ==========  md ≥ 768px  ========== */
+@media (min-width: 768px) {
+}
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width: 992px) {
+  .flex {
+    display: flex;
+  }
+  .flexone {
+    align-items: center;
+  }
+  .hero {
+    width: 50%;
+  }
+
+  .hero .top_img {
+    margin-top: -4vw;
+  }
+  .hero ul li {
+    font-size: 20px;
+  }
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width: 1200px) {
+  .hero ul li {
+    width: 62%;
+  }
+}
+@media (min-width: 1500px) {
+  .hero ul li {
+    width: 65%;
+    font-size: 28px;
+  }
+}
+@media (min-width: 1500px) {
+  .hero ul li {
+    width: 65%;
+    font-size: 28px;
+  }
+  .hero ul li.orange, .hero ul li.black {
+    margin-bottom: 20px;
+  }
+}
+
+/* End hero Section */
+/* ================== */
+
+/* ================== */
+/* Start Results Section */
+.results {
+  position: relative;
+  background: url(../images/bg-result.webp);
+  background-color: #F0F4F9;
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 16vw;
+}
+.results img {
+  display: block;
+}
+
+.results .btn_img {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width: 576px) {
+
+  }
+
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width: 992px) {
+  .results{
+    width: 50%;
+    padding-bottom:8vw;
+  }
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width: 1300px) {
+
+}
+
+
+/* End Results Section */
+/* ================== */
+
+/* ================== */
+/* Start doctor Section */
+
+.doctor {
+  position: relative;
+  background: url(../images/top-doc.webp);
+  background-size: cover;
+  background-position: bottom center;
+  padding-bottom: 15px;
+}
+
+.doctor .img_doctor {
+  width: 100%;
+  display: block;
+}
+
+
+.doctor .text {
+  text-align: center;
+}
+.doctor ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+.doctor ul li {
+  width: 100%;
+  font-size: 4.1vw;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  text-align: center;
+  color: #fff;
+  padding: 2px 0 7px;
+}
+.doctor ul li.bg{
+  background: linear-gradient(#101010,#282828);
+}
+
+.doctor .safe{
+  width: 50%;
+  margin: 4.5vw auto;
+}
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width: 576px) {
+  .doctor ul li {
+    margin-bottom: 10px;
+  }
+  .doctor .top_doctor h2{
+    font-size: 4vw;
+  }
+  .doctor .tall_p {
+    font-size: 2.4vw;
+    margin: 15px 0;
+  }
+  }
+
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width: 992px) {
+
+  .doctor {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-position: top left;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .doctor ul li {
+    font-size: 18px;
+  }
+
+
+  .doctor .top_doctor h2{
+    font-size: 28px;
+  }
+  .doctor .img_doctor{
+    width: 75%;
+  }
+  .doctor .safe{
+    margin: 20px auto;
+  }
+
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width: 1300px) {
+  .doctor ul li {
+    font-size: 24px;
+  }
+
+  .doctor .text {
+    padding-bottom: 40px;
+  }
+}
+
+/* End doctor Section */
+/* ================== */
+
+/* ================== */
+/* Start testm Section */
+
+
+
+.testm {
+  position: relative;
+  background-color:#017A01 ;
+}
+
+.testm .btn_img{
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+@media (min-width: 992px) {
+  .testm{
+    width: 50%;
+  }
+}
+
+/* End testm Section */
+/* ================== */
+
+/* ================== */
+/* Start form_section Section */
+
+/* top form section */
+
+/* form */
+
+.form_section .container_form {
+  background: linear-gradient(#101010, #262626);
+  padding-bottom: 10px;
+}
+
+.form_section .sm-p {
+  font-size: 2.7vw;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+  padding: 7px 0;
+}
+
+.form_section form {
+  background: linear-gradient(#279C0E, #0D4603);
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 5px 5px 8px #00000027;
+  padding-bottom: 15px;
+}
+.form_section .top_form {
+  padding: 12px 0;
+}
+.form_section .top_form p {
+  font-size: 5.2vw;
+  line-height: 1.3;
+  color: #fbfdfd;
+}
+.form_section form .input_div {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.form_section form .input_div svg {
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.form_section form .input_div .icon_Phone {
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.form_section form input {
+  width: 100%;
+  padding: 15px 40px 15px 10px;
+  font-size: 18px;
+  box-shadow: 5px 5px 8px #00000031;
+  text-align: right;
+  font-family: sans-serif;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in;
+}
+.form_section form input:focus {
+  border-color: #68e03e;
+}
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width: 576px) {
+  .form_section .sm-p {
+    font-size: 2.5vw;
+  }
+  .form_section .top_form p {
+    font-size: 4.8vw;
+  }
+  .form_section form .input_div {
+    width: 90%;
+  }
+  .form_section .top_form p {
+    font-size: 4.2vw;
+  }
+  .form_section form {
+    width: 85%;
+  }
+}
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width: 992px) {
+  .form_section {
+    display: flex;
+  }
+  .form_section .price {
+    width: 50%;
+    background: linear-gradient(#FAFAFA,#DCDCDC);
+  }
+
+  .form_section .container_form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form_section form {
+    width: 90%;
+  }
+
+  .form_section .sm-p {
+    font-size: 13.5px;
+  }
+  .form_section .top_form p {
+    font-size: 24px;
+  }
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width: 1200px) {
+  .form_section form {
+    width: 80%;
+    padding: 25px 20px 30px;
+    min-width: 550px;
+  }
+}
+
+/* End form_section Section */
+/* ================== */
+
+/* ================== */
+/* Start footer Section */
+
+.footer {
+  background: #262626;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.footer .boxs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.footer .boxs .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: 33.3%;
+}
+
+.footer .boxs .box img {
+  height: 24px;
+  width: auto;
+}
+
+.footer .boxs .box p {
+  font-size: 2.4vw;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width: 576px) {
+  .footer .boxs .box img {
+    height: 28px;
+  }
+}
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width: 992px) {
+
+  .footer .boxs .box {
+    gap: 20px;
+  }
+  .footer .boxs .box img {
+    height: 40px;
+  }
+  .footer .boxs .box p {
+    font-size: 18px;
+  }
+}
+
+/* End footer Section */
+/* ================== */
